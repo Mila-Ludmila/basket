@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>BASKET</title>
+</head>
+<body>
+
+  <header class="header">
+			<div class="basket">
+				<a href="#openModal"><img src="./img/bs.png" alt="Basket"></a>
+				<div id="openModal" class="modalDialog">
+					<div>
+						<a href="#close" title="close" class="close">X</a>
+							<div class="basket-content">
+
+                <div id="cart">
+                  <h3>Shopping Cart</h3>
+                  <div id="cart-items"></div>
+                  <button onclick="clearCart()">Clear Cart</button>
+              </div>
+
+							</div>
+					</div>
+				</div>
+			</div>
+	</header>
+<main>
+  <h1>Product List</h1>
+  <div id="product-list">
+    
+    <div class="product">
+        <span>Product 1 </span>
+          <img src="./img/images1.jfif" alt="sweet" id="sweet1">
+        <button onclick="addToCart('Product 1')">Add to Basket</button>
+    </div>
+    <div class="product">
+        <span>Product 2 </span>
+        <img src="./img/images2.jfif" alt="sweet" id="sweet2">
+        <button onclick="addToCart('Product 2')">Add to Basket</button>
+    </div>
+    <div class="product">
+        <span>Product 3 </span>
+        <img src="./img/images3.jfif" alt="sweet" id="sweet3">
+        <button onclick="addToCart('Product 3')">Add to Basket</button>
+    </div>
+</div>
+</main>
+
+<footer></footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>
