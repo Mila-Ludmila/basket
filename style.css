@@ -117,7 +117,7 @@ button:active{
 }
 .product img {
   margin: 15px;
-  height: 350px;
+  height: 300px;
   transition: translateY 0.2s ease-in;
 }
 .product img:hover {
